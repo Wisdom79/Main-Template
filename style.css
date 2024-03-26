@@ -3,7 +3,7 @@
 }
 
 .body {
-  background-color: gray;
+  background-color: rgb(255, 255, 255);
 }
 
 .navbar {
@@ -33,7 +33,7 @@
   line-height: 1.9;
 }
 
-/*======================================================== NAV BAR */
+/*================================================= NAV BAR ===========================================*/
 .my-navbar {
   background-color: gray;
 }
@@ -347,6 +347,7 @@ h1 {
 
 .social-media a:hover {
   transform: scale(1.4);
+  transition: 0.5s ease;
 }
 
 /* ==================================================== CARDS ======================================================= */
@@ -468,7 +469,7 @@ header {
   font-family: "Times New Roman", Times, serif;
   color: #000000;
   position: relative;
-    
+
 }
 
 .card-x2 {
@@ -513,6 +514,8 @@ header {
   border-radius: 8px;
   font-family: "Times New Roman", Times, serif;
   background-color: #d3d3d3;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .card-x3 h5 {
@@ -575,6 +578,24 @@ header {
   transform: scale(1);
 }
 
+.card-3 .section1 .bi-youtube {
+  font-size: 35px;
+  color: #f10707;
+  top: 5px;
+  margin-left: 40%;
+
+}
+
+.card-3 .section2 {
+  display: flex;
+  position: static;
+  margin-top: 20%;
+  font-size: medium;
+  font-family: sans-serif;
+  color: #000;
+  font-weight: 700;
+}
+
 .fa-thin-fa-handshake-fa-bounce {
   color: #198754;
   size: auto;
@@ -617,10 +638,8 @@ header {
 }
 
 body {
-  background-image: radial-gradient(
-    var(--secondary) 30%,
-    var(--background) 30%
-  );
+  background-image: radial-gradient(var(--secondary) 30%,
+      var(--background) 30%);
   background-size: 2px 3px;
   font-family: "Archivo", sans-serif;
   color: var(--primary);
@@ -677,15 +696,59 @@ body {
   top: 80px;
 }
 
-.accordion-card .accordion-header .h3{
-color: #000;
-margin-top: 38px;
-margin-bottom: 25px;
-margin-left: 10%;
-font-size: large;
-font-weight: 800;
-font-family: italic;
-font-style: normal;
-text-transform: capitalize;
-text-align: justify;
+.accordion-card .accordion-header .h3 {
+  color: #000;
+  margin-top: 38px;
+  margin-bottom: 25px;
+  margin-left: 10%;
+  font-size: large;
+  font-weight: 800;
+  font-family: italic;
+  font-style: normal;
+  text-transform: capitalize;
+  text-align: justify;
+}
+
+/***************************** CEO'S TEMPLATE STYLE CSS ****************************/
+.Governance {
+  width: 80%;
+  font-size: 24px;
+  border: 1px solid #d8d5d5;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d3d3d3;
+  box-shadow: 0 0 10px rgba rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  color: #000;
+  cursor: pointer;
+  position: absolute;
+  top: 10%;
+  width: 80%;
+  left: 10%;
+}
+.Governance .Inner-card{
+  width: 30%;
+  background-color: #555bff;
+  color: rebeccapurple;
+  height: 600px;
+  margin: 10px 5px 5px 5px;
+}
+.Governance .Inner-card0{
+  width: 100%;
+  background-color: #11db3d;
+  color: rebeccapurple;
+  height: 300px;
+  margin: 0px 5px 5px 0px;
+}
+
+.Governance .Inner-card1{
+  width: 70%;
+  background-color: #dd0f0f;
+  color: rebeccapurple;
+  height: 600px;
+  margin-top: 3%;
+  margin: 10px 5px 5px 5px;
 }
