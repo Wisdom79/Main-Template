@@ -714,7 +714,7 @@ body {
   width: 80%;
   font-size: 24px;
   border: 1px solid #d8d5d5;
-  height: 600px;
+  height: 250px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -728,27 +728,39 @@ body {
   top: 10%;
   width: 80%;
   left: 10%;
+  border-radius: 15px;
+  margin-top: 40px;
 }
-.Governance .Inner-card{
-  width: 30%;
-  background-color: #555bff;
-  color: rebeccapurple;
-  height: 600px;
-  margin: 10px 5px 5px 5px;
-}
-.Governance .Inner-card0{
+.image {
+  display: block;
   width: 100%;
-  background-color: #11db3d;
-  color: rebeccapurple;
-  height: 300px;
-  margin: 0px 5px 5px 0px;
+  height: 500px;
 }
 
-.Governance .Inner-card1{
-  width: 70%;
-  background-color: #dd0f0f;
-  color: rebeccapurple;
-  height: 600px;
-  margin-top: 3%;
-  margin: 10px 5px 5px 5px;
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  height: 100%;
+}
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
