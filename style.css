@@ -2,8 +2,8 @@
   font-family: sans-serif;
 }
 
-.body {
-  background-color: whitesmoke;
+body {
+  background-color: white;
 }
 
 .navbar {
@@ -14,26 +14,9 @@
   padding: 100px 0;
 }
 
-.carousel-caption {
-  bottom: 220px;
-  z-index: 2;
-}
-
-.carousel-caption h5 {
-  font-size: 45px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-top: 25px;
-}
-
-.carousel-caption p {
-  width: 60%;
-  margin: auto;
-  font-size: 18px;
-  line-height: 1.9;
-}
 
 /*================================================= NAV BAR ===========================================*/
+
 .my-navbar {
   background-color: gray;
 }
@@ -143,9 +126,30 @@
   height: 100vh;
 }
 
+
 /* CAROUSEL */
 
+
 /* ============================================== responsive css ================================================== */
+
+.carousel-caption {
+  bottom: 220px;
+  z-index: 2;
+}
+
+.carousel-caption h5 {
+  font-size: 45px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 25px;
+}
+
+.carousel-caption p {
+  width: 60%;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.9;
+}
 
 @media only screen and (min-width: 360px) and (max-width: 1440px) {
   .carousel-caption {
@@ -224,7 +228,9 @@ h1 {
   }
 }
 
+
 /* ================================================ CARDS ==========================================================*/
+
 .card {
   position: relative;
   width: 600px;
@@ -323,7 +329,9 @@ h1 {
   padding: 100% 0;
 }
 
+
 /*=================================================== SOCIAL MEDIA ICONS =========================================== */
+
 .social-media {
   z-index: 888;
   position: fixed;
@@ -348,9 +356,16 @@ h1 {
 .social-media a:hover {
   transform: scale(1.4);
   transition: 0.5s ease;
+  color: blue;
 }
 
+.social-media #youtube:hover {
+  color: red;
+}
+
+
 /* ==================================================== CARDS ======================================================= */
+
 header {
   padding: 100px;
   text-align: center;
@@ -365,6 +380,7 @@ header {
 }
 
 .card {
+  padding: 1%;
   width: 40%;
   font-size: 24px;
   margin: 10px 10px;
@@ -423,7 +439,6 @@ header {
   margin: 10px 10px;
   margin-top: 0.7rem;
   margin-bottom: -40px;
-  border: 1px solid #fdfcfc;
   height: 600px;
   display: flex;
   align-items: center;
@@ -439,75 +454,12 @@ header {
   font-style: normal;
 }
 
-.card-x1 {
-  margin-top: -10px;
-  width: 35%;
-  font-size: 24px;
-  margin: 5px;
-  height: 450px;
-  display: flex;
-  position: relative;
-  border-radius: 8px;
-  font-family: "Times New Roman", Times, serif;
-  background-color: #d3d3d3;
-}
-
-.card-x1 h5 {
-  font-size: medium;
-  font-weight: 500;
-  font-style: normal;
-  font-family: "Times New Roman", Times, serif;
-  color: #000000;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.card-x1 p {
-  font-size: large;
-  font-weight: 500;
-  font-style: normal;
-  font-family: "Times New Roman", Times, serif;
-  color: #000000;
-  position: relative;
-
-}
-
-.card-x2 {
-  margin-top: -10px;
-  width: 35%;
-  font-size: 24px;
-  margin: 5px;
-  height: 450px;
-  display: flex;
-  position: relative;
-  border-radius: 8px;
-  font-family: "Times New Roman", Times, serif;
-  background-color: #d3d3d3;
-}
-
-.card-x2 h5 {
-  font-size: medium;
-  font-weight: 500;
-  font-style: normal;
-  font-family: "Times New Roman", Times, serif;
-  color: #000000;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.card-x2 p {
-  font-size: large;
-  font-weight: 500;
-  font-style: normal;
-  font-family: "Times New Roman", Times, serif;
-  color: #000000;
-}
-
 .card-x3 {
   margin-top: -10px;
   width: 35%;
   font-size: 24px;
   margin: 5px;
+  padding: 1%;
   height: 450px;
   display: flex;
   position: relative;
@@ -532,6 +484,7 @@ header {
   font-style: normal;
   font-family: "Times New Roman", Times, serif;
   color: #000000;
+  padding: 1%;
 }
 
 .card-x h5 {
@@ -549,7 +502,6 @@ header {
   font-size: 24px;
   position: relative;
   margin-top: 0;
-  border: 1px solid #fdfcfc;
   height: 120px;
   display: flex;
   align-items: center;
@@ -583,7 +535,6 @@ header {
   color: #f10707;
   top: 5px;
   margin-left: 40%;
-
 }
 
 .card-3 .section2 {
@@ -621,7 +572,8 @@ header {
   transform: scale(1.2);
 }
 
-:root {
+
+/*:root {
   --primary: #555bff;
   --secondary: #22d2a0;
   --background: white;
@@ -630,19 +582,12 @@ header {
   --orange: #ff9c55;
   --red: #ff5555;
 }
+*/
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
-
-body {
-  background-image: radial-gradient(var(--secondary) 30%,
-      var(--background) 30%);
-  background-size: 2px 3px;
-  font-family: "Archivo", sans-serif;
-  color: var(--primary);
 }
 
 .card-3 p {
@@ -675,6 +620,7 @@ body {
   border-radius: 5px;
 }
 
+
 /*===================================== accordion css ============================================ */
 
 .header {
@@ -685,7 +631,6 @@ body {
   top: 25px;
   position: absolute;
 }
-
 
 .accordion-accordion-flush .accordion-item {
   width: 400px;
@@ -709,7 +654,9 @@ body {
   text-align: justify;
 }
 
+
 /***************************** CEO'S TEMPLATE STYLE CSS ****************************/
+
 .Governance {
   width: 80%;
   font-size: 24px;
@@ -731,6 +678,7 @@ body {
   border-radius: 15px;
   margin-top: 40px;
 }
+
 .image {
   display: block;
   width: 100%;
@@ -754,7 +702,7 @@ body {
 }
 
 .text {
-  white-space: nowrap; 
+  white-space: nowrap;
   color: white;
   font-size: 20px;
   position: absolute;
@@ -763,4 +711,11 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+}
+
+.card-item {
+  width: 50%;
+  position: absolute;
+  margin-top: 5%;
+  margin-left: 25%;
 }
